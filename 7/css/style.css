@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0 auto; padding: 0;
+    color: #333;
+    font-family: 'Pretendard-Regular';
+}
+li{list-style: none;}
+a{display: block; text-decoration: none; color: inherit;}
+img{display: block; border: none;}
+.cf::after{content: ""; clear: both; display: block;}
+
+header{
+    width: 100%; height: 100px;
+}
+#head{
+    width: 1200px;
+    background: #fff;
+}
+.logo{
+    width: 200px; height: 45px; padding: 28px 0 27px 0; float: left;
+}
+.logo img{width: 100%;}
+
+nav{
+    width: 1000px; height: 100px; float: left;
+    
+}
+.gnb{
+    width: 600px;
+    font-size: 20px;
+    position: relative;
+    top: 30px; left: 170px;
+    
+}
+.sub{
+    display: none;
+    font-size: 15px;
+}
+.gnb li{transition: .3s;}
+.gnb li{transition: .3s;}
+.gnb a{
+    background: #c2b9a9;
+    width: 150px; line-height: 40px;
+    text-align: center;
+}
+.gnb>li{float: left;}
+.gnb li:hover>a{background: #e0ddda; color: #8f765d; transition: .3s;}
+
+#slide{
+    width: 1200px; height: 300px;
+    overflow: hidden;
+}
+#slide ul{
+    animation: slide 9s infinite; 
+}
+@keyframes slide{
+    0% {margin-top: 0px;}
+    33% {margin-top: -300px;}
+    66% {margin-top: -600px;}
+    100% {margin-top: -900px;}
+}
+
+#content{
+    width: 1200px; height: 200px;
+}
+#content section{
+    width: 400px; height: 200px; float: left;
+}
+
+section:nth-child(3){
+    padding: 10px; box-sizing: border-box;
+}
+section:nth-child(3) img{
+    width: 100%
+}
+
+footer{
+    width: 100%; height: 100px;
+    background: #c2b9a9;
+}
+#foot{
+     width: 1200px; height: 100px;
+    
+}
+.fLogo{
+    width: 200px; height: 45px; padding: 28px 0 27px 0; float: left;
+}
+.fLogo img{width: 100%;}
+.copyright{
+    width: 800px; height: 100px; float: left;
+    padding: 25px 0; box-sizing: border-box;
+}
+.copyright p{
+    font-size: 12px;
+    text-align: center;
+}
+.copyright p:nth-child(2){
+    font-size: 10px;
+    color: #666;
+    padding-top: 10px;
+}
+.sns{
+    width: 200px; height: 100px; float: left;
+}
+.sns a{
+    width: 20px; height: 20px; float: left;
+    padding: 40px 30px 40px 15px;
+}
+.sns a img{width: 100%;}
